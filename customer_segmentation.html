@@ -50,15 +50,151 @@
 						<div class="inner">
 							<h1>Customer Segmentation Analysis</h1>
 							<span class="image main"><img src="images/customer.png" alt="" /></span>
-							<p><strong>You can find all the code and details of this project on here: <a href="https://github.com/liyufan119/Customer_Segmentation" target="_blank">Customer Segmentation Analysis</a></strong></p>
-							<p>Customer segmentation is the process of dividing a customer base into distinct groups based on specific criteria such as demographics, 
-								behavior, interests, or purchasing patterns. This strategy is widely used in retail online businesses to better understand their customers and tailor marketing strategies, 
-								product offerings, and customer experiences to meet the unique needs of each segment.</p>
-							<p>After exploring and cleaning the data, I utilized PCA to reduce the data dimension for modeling and visualization. 
-								Next, I employed the Elbow method to determine the optimal cluster number and applied KMeans for clustering. 
-								As a result of clustering, the customers have been categorized into 6 distinct groups.
-							 </p>
-			
+							
+							<p><strong>Executive Summary:</strong> Our customer segmentation analysis, utilizing KMeans clustering, has revealed 6 distinct groups 
+								characterized by diverse demographic and behavioral attributes. I will outline actionable insights 
+								and strategic marketing approaches aimed at optimizing customer engagement and driving revenue growth within each group.
+							</p>
+							<p><strong>Analysis Reveals 6 Distinct Customer Segments:</strong></p>
+								<table>
+									<thead>
+										<tr>
+											<th>Group</th>
+											<th>Recommendations</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td> Group 1 - Middle-aged moderate spenders</td>
+								
+											<td><strong>Segmented Offerings:</strong> Develop diverse product offerings and promotions</td>
+										</tr>
+										<tr>
+											<td>Group 2 - Affluent Wine Enthusiasts</td>
+											
+											<td><strong>Targeted Marketing:</strong>  Premium wine offers & personalized marketing strategy</td>
+										</tr>
+										<tr>
+											<td>Group 3 - Young Frugal Shoppers</td>
+											
+											<td><strong>Segment-specific Promotions:</strong> Tailor promotions for high-value purchases</td>
+										</tr>
+										<tr>
+											<td>Group 4 - Upper Middle-aged Heavy Spender</td>
+											
+											<td><strong>Engagement Strategies:</strong> Develop targeted campaigns on meat products & In-store experiences</td>
+										</tr>
+										<tr>
+											<td>Group 5 - Elderly Conservative Shoppers</td>
+											
+											<td><strong>Customer Retention:</strong> Offer value-driven promotions and products</td>
+										</tr>
+										<tr>
+											<td>Group 6 - Middle-aged Balanced Spenders</td>
+											
+											<td><strong>Segmented Offerings:</strong> Develop diverse product offerings and promotions</td>
+										</tr>
+									</tbody>
+								</table>
+								
+								<h3>Action Plan:</h3>
+							
+									<ul>
+										<li>Conduct targeted marketing campaigns for each cluster, leveraging demographic and behavioral
+											insights.
+										</li>
+										<li>Deploy personalized offers and promotions tailored to specific segments to maximize engagement
+											and sales.
+										</li>
+										<li>Monitor campaign performance and customer feedback to iteratively refine marketing strategies.
+										</li>
+										<li>Invest in customer relationship management systems to enhance customer retention and loyalty
+											across all clusters.
+										</li>
+										<li>Collaborate with cross-functional teams to ensure alignment between marketing initiatives and
+											overall business objectives.
+										</li>
+									</ul>
+									<h2>Customer Groups Information</h2>
+									<span class="image left"><img src="images/Pie chart.svg" alt="" /></span>
+									<p> This pie chart indicates that group1 comprises the largest proportion of individuals, with 24.5%, 
+										making up nearly a quarter of the total population studied. It suggests a significant portion of customers fall into this category.
+										Group 6 and Group 3 are slightly smaller than Group 1, but they are still significant segments of the customer base.
+										Group 4  and Group 5 have similar numbers of individuals, They represent around 16% of the population each, 
+										indicating their comparable importance within the customer base.Group 2 has the smallest number of individuals comparing with the other 5 groups.
+									</p>
+									<br>
+									<p><strong>Check the age and income distribution of our customer base</strong></p>
+									<div class="image-container">
+										<span class="image left"><img src="images/Income.png" alt="" /></span>
+										<span class="image right"><img src="images/age.png" alt="" /></span>
+									</div>
+									<p>Despite a few outliers evident in the histograms, an analysis of the two histograms presented above reveals a predominant concentration of our customer base within the age bracket of 30 to 60 years old.
+										Specifically, a substantial majority falls within the range of 40 to 50 years old.
+										In terms of income distribution, our customer demographic primarily falls within the annual income range of 20,000 to 80,000 USD. 
+										Notably, the largest segment of our clientele earns between 40,000 to 60,000 USD annually, with a discernibly smaller proportion exhibiting higher income levels.
+									</p>
+									<h3>Now let's dive deep in each group </h3>
+									
+										<table>
+											<thead>
+												<tr>
+													<th>Group</th>
+													<th>Age</th>
+													<th>Income</th>
+													<th>Purchase Behavior</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Group 1: Middle-aged moderate spenders</td>
+													<td>44</td>
+													<td>Lower (average $39,025)</td>
+													<td>Moderate spending across different categories. Average spending on wines, meat products, and store purchases.</td>
+												</tr>
+												<tr>
+													<td>Group 2: Affluent Wine Enthusiasts</td>
+													<td>43</td>
+													<td>High (average $79,858)</td>
+													<td>Overall high spending. Higher proportion of spending on premium items like gold products.</td>
+												</tr>
+												<tr>
+													<td>Group 3: Young Frugal Shoppers</td>
+													<td>37</td>
+													<td>Lowest (average $25,790)</td>
+													<td>Low spending across categories, particularly on luxury items (wines and gold products).</td>
+												</tr>
+												<tr>
+													<td>Group 4: Upper Middle-aged Heavy Spender</td>
+													<td>45</td>
+													<td>High (average $75,793)</td>
+													<td>High spending on meat products. High proportion of store purchases.</td>
+												</tr>
+												<tr>
+													<td>Group 5: Elderly Conservative Shoppers</td>
+													<td>48</td>
+													<td>Moderate (average $50,580)</td>
+													<td>Conservative spending patterns. Moderate to low spending on various categories.</td>
+												</tr>
+												<tr>
+													<td>Group 6: Middle-aged Balanced Spenders</td>
+													<td>47</td>
+													<td>Moderate to high (average $63,626.83)</td>
+													<td>Balanced spending across different categories. Moderate total spending amount.</td>
+												</tr>
+											</tbody>
+										</table>
+										<p>
+											Based on the detailed segmentation analysis of each group, we can formulate targeted strategies 
+											tailored to the specific characteristics of each segment. This approach is essential to ensure alignment
+											between our actions and the unique needs and preferences of each customer group.
+										</p>
+									
+										<h3>Methodology</h3>
+										<span class="image center "><img src="images/metho_crop.svg" alt="" /></span>
+										
+
+							 <br><p><strong>You can find all the code and details of this project on here: <a href="https://github.com/liyufan119/Customer_Segmentation" target="_blank">Customer Segmentation Analysis</a></strong></p>
 						</div>
 					</div>
 			</div>
